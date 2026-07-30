@@ -1,6 +1,6 @@
 /**
  * Audio Manager para o Projeto Música Além da Visão
- * Transcrições 100% fiéis dos 6 áudios gravados para o curso.
+ * Caminhos relativos universais para GitHub Pages, Vercel e Servidor Local.
  */
 
 class AudioManager {
@@ -10,17 +10,16 @@ class AudioManager {
     this.currentAudioElement = null;
     this.playingAudioId = null;
 
-    // Mapeamento dos arquivos MP3 reais na pasta public/audios/
+    // Caminhos relativos universais (compatíveis com GitHub Pages sub-path)
     this.audioPaths = {
-      'audio-1': '/audios/audio_01_oque_e_musicografia.mp3',
-      'audio-2': '/audios/audio_02_conhecendo_cela.mp3',
-      'audio-3': '/audios/audio_03_celulas_do_re_mi.mp3',
-      'audio-4': '/audios/audio_04_celulas_fa_sol.mp3',
-      'audio-5': '/audios/audio_05_celulas_la_si.mp3',
-      'audio-6': '/audios/audio_06_treino_da_aula.mp3',
+      'audio-1': './audios/audio_01_oque_e_musicografia.mp3',
+      'audio-2': './audios/audio_02_conhecendo_cela.mp3',
+      'audio-3': './audios/audio_03_celulas_do_re_mi.mp3',
+      'audio-4': './audios/audio_04_celulas_fa_sol.mp3',
+      'audio-5': './audios/audio_05_celulas_la_si.mp3',
+      'audio-6': './audios/audio_06_treino_da_aula.mp3',
     };
 
-    // Transcrições literais extraídas dos áudios do curso
     this.transcriptions = {
       'audio-1': 'Bem-vindo! Neste curso você aprenderá a identificar as notas musicais utilizando a Musicografia Braille. A Musicografia Braille é um sistema de escrita musical baseado na célula Braille, formada por seis pontos. Cada combinação de pontos representa um símbolo musical. Neste treinamento você aprenderá primeiro a reconhecer os símbolos pelo tato e em seguida a localizar as notas no teclado adaptado.',
       'audio-2': 'Antes de aprender a Musicografia Braille, é importante conhecer a célula Braille. A célula Braille é a estrutura básica utilizada para representar letras, números, sinais e também os símbolos musicais. Ela é formada por seis posições organizadas em duas colunas. Na coluna da esquerda ficam os pontos 1, 2 e 3. Na coluna da direita ficam os pontos 4, 5 e 6. Imagine duas colunas verticais: na coluna da esquerda, de cima para baixo, estão os pontos 1, 2 e 3. Na coluna da direita, também de cima para baixo, estão os pontos 4, 5 e 6. Cada símbolo é formado pela combinação de alguns desses pontos em relevo. Nem todos os seis pontos aparecem ao mesmo tempo em cada símbolo, apenas alguns pontos ficam elevados enquanto os demais permanecem sem relevo. Para facilitar o aprendizado, vamos conhecer cada posição individualmente: localize o ponto 1: ele está no canto superior esquerdo da célula. Agora localize o ponto 2: ele fica logo abaixo do ponto 1, no centro da coluna à esquerda. Em seguida, encontre o ponto 3: ele está na parte inferior da coluna esquerda. Passe agora para a coluna da direita: o ponto 4 está no canto superior direito. O ponto 5 fica logo abaixo do ponto 4. O ponto 6 está na parte inferior da coluna direita. Explore essas posições lentamente com a ponta do dedo indicador. Repita esse movimento até conseguir identificar cada uma delas sem dificuldade. A partir da próxima aula você aprenderá como essas posições são combinadas para formar os símbolos da Musicografia Braille utilizados nas notas musicais. Reconhecer corretamente cada ponto da célula Braille é o primeiro passo para aprender a ler música pelo tato.',

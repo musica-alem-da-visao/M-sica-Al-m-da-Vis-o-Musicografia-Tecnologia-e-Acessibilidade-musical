@@ -1,77 +1,78 @@
 # 🎹 Música Além da Visão – Teclado Adaptado com Musicografia Braille
 
-> Aplicação Web Completa, Responsiva e Acessível (WCAG 2.1 AAA) desenvolvida para a **Escola Municipal Senador Duarte Filho (Mossoró/RN)**.
+> **Projeto de Acessibilidade Educacional e Inclusão Musical**  
+> *Escola Municipal Senador Duarte Filho – Mossoró / RN*
+
+![Acessibilidade](https://img.shields.io/badge/Acessibilidade-WCAG_2.1_AAA-success)
+![Musicografia](https://img.shields.io/badge/Musicografia-Braille_Oficial-pink)
+![Áudio](https://img.shields.io/badge/Conteúdo-6_Aulas_em_Áudio-purple)
+![Impressão 3D](https://img.shields.io/badge/Protótipo_3D-Fixação_Cola_Isopor-blue)
 
 ---
 
-## 🚀 Como Publicar na Vercel (Passo a Passo Rápido)
+## 📌 Sobre o Projeto
 
-O projeto já está **100% configurado para a Vercel** com os arquivos `vercel.json` e `package.json`.
+O projeto **Música Além da Visão** desenvolveu uma solução prática, inclusiva e de baixo custo para o ensino de música para estudantes cegos ou com baixa visão.
 
-### 📌 Método 1: Enviar pelo GitHub (Mais Recomendado ⭐)
+Através do desenvolvimento de **capas em impressão 3D (material PLA)** fixadas sobre as teclas brancas de teclados musicais com **cola de Isopor**, os alunos conseguem identificar cada nota musical tatilmente através do código da **Musicografia Braille**.
 
-1. **Crie um repositório no GitHub**:
-   - Vá para [github.com/new](https://github.com/new) e crie um novo repositório com o nome `musica-alem-da-visao`.
-2. **Suba os arquivos deste projeto**:
-   ```bash
-   git add .
-   git commit -m "Projeto Música Além da Visão - Completo"
-   git branch -M main
-   git remote add origin https://github.com/SEU_USUARIO/musica-alem-da-visao.git
-   git push -u origin main
-   ```
-3. **Conecte à Vercel**:
-   - Acesse [vercel.com/new](https://vercel.com/new) e faça login com sua conta do GitHub.
-   - Selecione o repositório `musica-alem-da-visao`.
-   - Clique em **Deploy**.
-   - **Pronto!** Em 30 segundos seu site estará online 24h/dia com link gratuito `.vercel.app` e SSL (HTTPS) automático!
+O site reúne uma **Central de Aulas em Áudio**, um **Simulador Interativo de Teclado Musical** e a disponibilização dos moldes 3D em código aberto (*open-source*).
 
 ---
 
-### 📌 Método 2: Usando o Vercel CLI no Terminal
+## 🎧 Aulas em Áudio (Conteúdo Narrado)
 
-1. Abra o terminal na pasta do projeto e execute:
-   ```bash
-   npx vercel
-   ```
-2. Siga as instruções na tela (dê Enter para confirmar as opções padrão).
-3. O projeto será publicado instantaneamente e o link de acesso será exibido no terminal!
+ O curso é composto por **6 módulos explicativos em áudio**, acompanhados de transcrição textual literal para acessibilidade universal:
 
----
-
-## 🎧 Como Adicionar ou Alterar os Áudios das 7 Etapas Futuramente
-
-Se você decidir gravar narrações em áudio para as etapas do projeto:
-
-1. Grave os arquivos em formato `.mp3`.
-2. Salve os arquivos dentro da pasta `public/audios/` com estes nomes:
-   - `etapa1.mp3`
-   - `etapa2.mp3`
-   - `etapa3.mp3`
-   - `etapa4.mp3`
-   - `etapa5.mp3`
-   - `etapa6.mp3`
-   - `etapa7.mp3`
-3. Envie as alterações para o GitHub / Vercel. A Vercel atualizará o site em tempo real sem precisar reconfigurar nada!
-
-> **Nota de Acessibilidade**: Se o arquivo `.mp3` não estiver na pasta, o site possui um **sintetizador de voz nativo** que lê o texto em voz alta automaticamente ao clicar no botão "Ouvir Narração"!
+1. **Aula 01 – O que é a Musicografia Braille?** *(0:27 min)*  
+   *Apresentação do sistema de escrita e leitura musical adaptado para deficientes visuais.*
+2. **Aula 02 – Conhecendo a Célula Braille** *(1:44 min)*  
+   *Estrutura das duas colunas verticais (Pontos 1, 2, 3 à esquerda e Pontos 4, 5, 6 à direita).*
+3. **Aula 03 – As Células Braille: Dó, Ré e Mi** *(1:02 min)*  
+   *Detalhamento das combinações de pontos para as notas Dó (1,4,5), Ré (1,5) e Mi (1,2,4).*
+4. **Aula 04 – As Células Braille: Fá e Sol** *(0:37 min)*  
+   *Detalhamento dos pontos em relevo para as notas Fá (1,2,4,5) e Sol (1,2,5).*
+5. **Aula 05 – As Células Braille: Lá e Si** *(0:38 min)*  
+   *Detalhamento das notas Lá (2,4) e Si (2,4,5), completando a sequência da escala.*
+6. **Aula 06 – Treino da Aula & Prática no Teclado** *(0:37 min)*  
+   *Exercício prático de leitura tátil com o indicador subindo e descendo a escala diatônica.*
 
 ---
 
-## 🎹 Recursos Integrados no Site
+## ⠙ Tabela da Escala de Dó em Musicografia Braille
 
-- **Sintetizador Sonoro de Teclado Musical (Web Audio API)**: Toca as notas reais de Dó a Si com o som de frequência acústica real, destacando os pontos Braille.
-- **Modo Alto Contraste**: Botão acessível para deficientes visuais/baixa visão com tema amarelo/preto de alta visibilidade.
-- **Ajuste de Fonte**: Aumentar, resetar e diminuir o tamanho dos textos.
-- **Atalhos de Teclado**: Teclas `Alt + 1` até `Alt + 7` para navegação instantânea.
-- **Teclas Físicas do Computador**: Pressione `A, S, D, F, G, H, J` no teclado para tocar as notas musicais no simulador!
+| Nota Musical | Símbolo Braille | Pontos Ativados na Célula | Tecla no Simulador |
+| :---: | :---: | :---: | :---: |
+| **Dó** | ⠙ | Pontos 1 - 4 - 5 | `A` |
+| **Ré** | ⠑ | Pontos 1 - 5 | `S` |
+| **Mi** | ⠋ | Pontos 1 - 2 - 4 | `D` |
+| **Fá** | ⠛ | Pontos 1 - 2 - 4 - 5 | `F` |
+| **Sol** | ⠓ | Pontos 1 - 2 - 5 | `G` |
+| **Lá** | ⠌ | Pontos 2 - 4 | `H` |
+| **Si** | ⠚ | Pontos 2 - 4 - 5 | `J` |
 
 ---
 
-## 📍 Informações do Projeto
+## 🧩 O Protótipo em Impressão 3D
 
-- **Projeto**: Música Além da Visão – Teclado Adaptado com Musicografia Braille
-- **Escola**: Escola Municipal Senador Duarte Filho
-- **Cidade**: Mossoró / RN
-- **E-mail**: `musicaalemdavisaofeira@gmail.com`
-- **Integrantes**: João Gabriel e Equipe
+- **Material**: Filamento PLA sustentável.
+- **Fixação**: Fixadas diretamente sobre as teclas brancas do teclado musical utilizando **cola de Isopor**, garantindo fixação firme, precisa e duradoura durante as aulas.
+- **Custo**: Baixíssimo custo de produção por kit de oitavas.
+
+---
+
+## ♿ Recursos de Acessibilidade Web (WCAG 2.1 AAA)
+
+- **Player de Áudio com Controle de Velocidade**: Opção de ouvir em `1x`, `1.25x` e `1.5x`.
+- **Modo Alto Contraste**: Alternador para padrão visual de alto contraste (fundo preto e texto amarelo/branco).
+- **Redimensionamento de Fonte**: Ajuste dinâmico nos botões `A-`, `A` e `A+`.
+- **Teclado Musical Interativo**: Toca o som senoidal real da frequência musical (Web Audio API) e anuncia a nota por voz sintetizada ao clicar ou pressionar as teclas do computador (`A`, `S`, `D`, `F`, `G`, `H`, `J`).
+- **Transcrição Literal**: Botões expansíveis com a transcrição textual de todos os áudios.
+
+---
+
+## 👥 Créditos & Ficha Técnica
+
+- **Desenvolvimento & Protótipo 3D**: João Gabriel e Equipe
+- **Instituição**: Escola Municipal Senador Duarte Filho – Mossoró / RN
+- **E-mail de Contato**: `musicaalemdavisaofeira@gmail.com`
